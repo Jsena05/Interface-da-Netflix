@@ -1,0 +1,175 @@
+/* decalarar variável dentro do css (:root) */
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body {
+    background: rgb(67, 58, 100);
+    font-family: 'Arial', Times, serif;
+    color: white;
+
+}
+
+body .backgroud-image {
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url("/imgs/cartaz-de-homem-aranha-sem-volta-para-casa-1639517284758_v2_3x4.jpg");
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center, center;
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    position: fixed;
+    background: rgba(26, 26, 26, .65);
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    text-shadow: 0 0 10px black;
+    -webkit-text-stroke: 0.2px red;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #433a64;
+    border-radius: 5px;
+    padding: 6px 10px;
+    text-shadow: 0 0 4px var(--vermelho);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* hover = toda vez que o mouse passar em cima irá fazer algo*/
+header nav a:hover {
+    color: #AAA;
+}
+
+/* filme principal */
+/* o linear-gradiente irá dar um contraste(nesse caso entre a escrita e a imagem) */
+.filme-principal {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-shadow: 0 0 10px black;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 0 0 10px red;
+
+}
+
+.botao-informacao {
+    background-color: rgba(109, 109, 110, .50);
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-informacao:hover {
+    background-color: rgba(170, 170, 170, 0.61)
+}
+
+.botao-assistir {
+    background-color: rgba(255, 255, 255, 0.897);
+    border: none;
+    border-radius: 4px;
+    color: #000;
+
+    padding: 15px 20px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+
+    margin-right: 8px;
+}
+
+.botao-assistir:hover {
+    background-color: #AAA;
+}
+
+.filme-principal .botoes {
+    margin-bottom: 50px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+
+
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.carrosel-filmes .Vingadores {
+    font-size: 25px;
+    margin: 15px 20px;
+}
+
+.carrosel-filmes .x-men {
+    font-size: 25px;
+    margin: 15px 20px;
+}
+
+.carrosel-filmes .Liga-da-justica {
+    font-size: 25px;
+    margin: 15px 20px;
+}
